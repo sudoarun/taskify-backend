@@ -1,8 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const router = require("./routes/taskifyRoutes");
-const env = require("dotenv");
-env.config();
+require("dotenv").config();
 // PORT of the app
 const PORT = process.env.PORT || 5500;
 const URI = process.env.MONGODBURL || "mongodb://127.0.0.1:27017/taskify";
