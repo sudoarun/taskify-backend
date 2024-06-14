@@ -5,7 +5,7 @@ const env = require("dotenv");
 env.config();
 // PORT of the app
 const PORT = process.env.PORT || 5500;
-const URI = process.env.URI || "mongodb://127.0.0.1:27017/taskify";
+const URI = process.env.MONGODBURL || "mongodb://127.0.0.1:27017/taskify";
 // MongoDB Connection
 mongoose.connect(URI);
 const db = mongoose.connection;
