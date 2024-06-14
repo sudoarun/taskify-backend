@@ -4,7 +4,9 @@ const router = require("./routes/taskifyRoutes");
 // PORT of the app
 const PORT = process.env.PORT || 5500;
 // MongoDB Connection
-mongoose.connect("mongodb://127.0.0.1:27017/taskify");
+mongoose.connect(
+  "mongodb+srv://unlock:z3YGdZmeSOM8Oi7r@userdb.pwbrr.mongodb.net/?retryWrites=true&w=majority&appName=userDB"
+);
 const db = mongoose.connection;
 // MongoDB Connection test
 db.on("error", () => console.log("Error in connection"));
